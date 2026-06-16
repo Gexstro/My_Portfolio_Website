@@ -1,0 +1,11 @@
+.header-container h1{
+  font-family: "Black Ops One";
+  color: white;
+}
+
+@media(max-width: 240px)
+{
+  .header-container h1{
+    font-size: 25px;
+  }
+}
