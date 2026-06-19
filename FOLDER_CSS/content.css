@@ -12,12 +12,14 @@
 }
 
 h2{
+  color: white;
   font-size: 40px;
   margin-bottom: 10px;
   font-family: Oswald, Arial;
 }
 
 p{
+  color: white;
   font-family: Oswald, Arial;
   line-height: 50px;
   font-size: 35px;
