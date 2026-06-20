@@ -52,7 +52,7 @@
   cursor: default;
 }
 
-.projects-preview button{
+.projects-preview a{
   background-color: rgb(0, 153, 255);
   color: white;
   font-family: Anton, sans-serif;
@@ -61,13 +61,14 @@
   border: 2px;
   padding: 12px;
   margin-top: auto;
+  text-align: center;
 
   cursor: pointer;
 }
-.projects-preview button:hover{
+.projects-preview a:hover{
   opacity: 0.8;
 }
-.projects-preview button:active{
+.projects-preview a:active{
   opacity: 0.4;
 }
 
