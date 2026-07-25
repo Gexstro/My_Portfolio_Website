@@ -3,46 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio Website</title>
+  <title>My Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="FOLDER_CSS/general.css">
-  <link rel="stylesheet" href="FOLDER_CSS/header.css">
-  <link rel="stylesheet" href="FOLDER_CSS/navbar.css">
-  <link rel="stylesheet" href="FOLDER_CSS/content.css">
+  <link rel="stylesheet" href="./myWeb-style.css">
 </head>
 <body>
-  <nav class="site-nav">
-    <div class="header-container">
-      <h1> MY PORTFOLIO </h1> 
-    </div>
+  <header>
+    <nav class="site-nav">
+      <h1>Welcome</h1>
+      <button class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="profile-info">
+        <img class="profile-img" 
+        src="./Images/My Profile Pic (1).jpeg">
+        <h2>Rupam Roy</h2>
 
-    <div class="empty-container"></div>
+        <div class="social-class">
+          <a href="https://instagram.com/_.rupam._6" target="_blank">
+            <img class="instagram" src="./Images/instagram.png">
+          </a>
 
-    <div class="nav-container">
-      <a href="index.html"> HOME </a>
-      <a href="project.html"> PROJECTS </a>
-     </div>
-  </nav>
+          <a href="https://www.linkedin.com/in/rupam-roy-38678b394" target="_blank">
+            <img class="linkedin" src="./Images/linkedin.png">
+          </a>
+        </div>
+      </div>
 
-  <main class="main-container">
-    <div class="content-container">
-      <h2> Hi, My Name is Rupam </h2>
-
-      <p> I'm currently learning web development and creating projects
-        to strengthen my skills in <b> HTML, CSS, JavaScript </b> and responsive design.
-
-        My goal is to become a full-stack developer and build useful web applications
-        and grow into a professional developer through consistent learning and practice.
+      <div class="intro-container">
+        <h2> Introduction </h2> <hr>
+        <p>
+          My name is Rupam Roy, and I'm a passionate aspiring Full-Stack Web Developer.
+          I enjoy building clean, responsive, and user-friendly websites using HTML and CSS,
+          and I'm currently expanding my skills in JavaScript, Node.js, Express, and APIs.
+          I believe the best way to learn is by building real projects, which is why every
+          project in my portfolio represents a step in my journey as a developer.
       </p>
-    </div>
+
+      <p>
+          I'm always eager to improve my skills, explore new technologies, and solve
+          real-world problems through code. My long-term goal is to become a software
+          engineer and create modern, interactive web applications that provide excellent
+          user experiences while continuously learning and growing as a developer.
+      </p>
+      </div>
+    </section>
+
+    <section  id="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container-main">
+        <div class="skills-container">
+          <p class="skills-name">HTML</p>
+          <div class="border">
+            <div class="bar html"></div>
+          </div>
+          <p class="level">Intermediate</p>
+        </div>
+
+        <div class="skills-container">
+          <p class="skills-name">CSS</p>
+          <div class="border">
+            <div class="bar css"></div>
+          </div>
+          <p class="level">Intermediate</p>
+        </div>
+
+        <div class="skills-container">
+          <p class="skills-name">Java Script</p>
+          <div class="border">
+            <div class="bar javascript"></div>
+          </div>
+          <p class="level">Beginner</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h2>Projects</h2>
+      <div class="projects-container">   
+        <div class="projects-preview">
+          <img src="./Images/gamestore.webp">
+          <div class="projects-info">
+            <div class="projects-title">
+              <h3>Game Store Landing Page</h3>
+              <p>A static game library page built with HTML and CSS. I created this project to practice Flexbox and CSS Grid.
+</p>
+              <a href="">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects-preview">
+          <img src="./Images/Game Library Practice.webp">
+          <div class="projects-info">
+            <div class="projects-title">
+              <h3>Static Game Library</h3>
+              <p>A static game library page built with HTML and CSS. I created this project to practice Flexbox and CSS Grid.
+</p>
+              <a href="">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-to-top-section">
+      <a href="#">Back to top</a>
+    </section>
   </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
